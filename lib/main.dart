@@ -42,7 +42,7 @@ class MainScreen extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: Image.network(
                     'https://firebasestorage.googleapis.com/v0/b/przntr.appspot.com/o/48bc7a49-b260-457a-b207-70a47f14e13c.png?alt=media&token=103ba2cf-5800-43d8-b9cf-21b4d0fae2a2',
-                    height: 200,
+                    fit: BoxFit.fill,
                     errorBuilder: (context, err, stacktrace) =>
                         const Icon(Icons.warning, color: Colors.red),
                   ))
